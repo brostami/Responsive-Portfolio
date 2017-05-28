@@ -306,19 +306,42 @@ button {
 	height: auto;
 }
 
-#main-body {
+/*#main-body {
   	margin: 0 auto;
   	position:relative;
   	width: 90%;
   	background-image: url("../images/cubes.png");
+}*/
+
+.content-area {
+	width: 90%;
+	margin: 0 auto;
 }
 
 
 
-}
-
-@media screen and (max-width: 640px) {
-
 
 
 }
+
+@media screen and (max-width: 980px) {
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 700px;
+  }
+
+ @media screen and (max-width: 640px) {
+  
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 600px;
+  }
