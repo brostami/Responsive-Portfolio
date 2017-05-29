@@ -241,6 +241,10 @@ aside {
 
 #connect-container:after {
 	content: '';
+  /* It seems like this width declaration is causing the connect with me box to be too wide at a small screen.
+   * I wasn't able to figure out an easy fix looking at it, but I would guess you would have
+   * to refactor to remove this :after block
+   */
 	width: 100%;
 	display: inline-block;
 }
@@ -342,6 +346,7 @@ button {
 
 }
 
+/** These styles below look like they could be added to the media queries above **/
 @media screen and (max-width: 768px) {
   
 
@@ -349,11 +354,13 @@ button {
   .wrapper {
     width: 100%;
   }
+} /** careful of closing these blocks **/
 
- @media screen and (max-width: 640px) {
-  
+@media screen and (max-width: 640px) {
+
 
   /* The wrapper's width will be 600px */
   .wrapper {
     width: 100%;
   }
+}
